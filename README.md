@@ -11,12 +11,11 @@
 $ terraform init --upgrade
 ```
 
-## Create a workspace for the prospect (Optional)
+## Create a workspace
 
 ```
-$ terraform workspace new my_prospect
+$ terraform workspace new my_workspace
 ```
-Where `my_prospect` is the company name of the prospect
 
 ## Review the execution plan
 
@@ -37,9 +36,8 @@ $ terraform apply -var="access_token=abc123" -var="realm=eu0"
 If you created a workspace you will first need to ensure you are in the correct workspace e.g.
 
 ```
-$ terraform workspace select my_prospect
+$ terraform workspace select my_workspace
 ```
-Where `my_prospect` is the company name of the prospect
 
 ```
 $ terraform destroy -var="access_token=abc123" -var="realm=eu0"
